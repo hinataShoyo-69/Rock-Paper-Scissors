@@ -31,13 +31,10 @@ function playGame(playerChoice){
     }
   }
   playerDisplay.textContent=`Player: ${playerChoice}`;
-computerDisplay.textContent=`Computer: ${computerChoice}`;
-resultDisplay.textContent=`${result}`;
- 
-}
+  computerDisplay.textContent=`Computer: ${computerChoice}`;
+  resultDisplay.textContent=`${result}`;
 
-
-switch(result){
+  switch(result){
   case "You win!":
     playerScore++;
     playerScoreDisplay.textContent=playerScore;
@@ -48,3 +45,8 @@ switch(result){
     computerScoreDisplay.textContent=computerScore;
     break;
 }
+ 
+}
+
+
+
